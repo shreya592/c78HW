@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Class 78 HW</title>
+    </head>
+    <body>
+<center>
+    <h1>My Family Book</h1>
+</center>
+<button onclick="update();">Next</button>
+
+
+<img id="album" src=""> 
+<h4 id="family_member_name"></h4>
+<script>
+
+var image= [
+  "https://lh3.googleusercontent.com/proxy/Xw86iMGMeSIT_DjBPphU_QgO2IRk8OfE5onP0Odckise7dHnnx6I8jcRtc6foPWZQhir_bQGSQdYPqou0X8qTMniI_i3-Ks4E-xVQizph5nZ6DCSKT0_QmS0IWgVKnN2Ngmd0H0nAL3lIPnG52nO",
+  
+  "https://www.freeiconspng.com/thumbs/mother-png/mom-mother-cartoon-png-7.png",
+  
+  "https://toppng.com/uploads/preview/mcm-every-day-my-animated-crush-boss-baby-brother-name-11562891858biamraf2zd.png"
+  
+
+];
+var i=0;
+
+function update(){
+  if(i == 3)
+    {
+      i=0;
+    }
+  document.getElementById("album").src=image[i];
+  i++;
+}
+
+</script>
+
+
+    </body>
+</html>
